@@ -96,6 +96,8 @@ The React.createElement function creates a virtual DOM representation of the ele
 
 _______________________________________________________________________________________________________________________________________________
 **functional component lifecycle**
+
+
 In React, functional components are a type of component that are defined as JavaScript functions. Until the introduction of React Hooks, functional components were stateless and didn't have lifecycle methods. However, with the advent of React Hooks, functional components can now use state and lifecycle features through hooks.
 
 Here's a brief overview of the lifecycle aspects for functional components with the use of hooks:
@@ -186,6 +188,8 @@ Note that these hooks have made it easier to manage the lifecycle of functional 
 
 ____________________________________________________________________________________________________________________________________
 **State**
+
+
 Definition: In React, "state" refers to the data that a component maintains and can change over time. It is a way for a component to keep track of information and trigger re-renders when that information changes.
 
 Usage: State is typically managed using the useState hook in functional components or through the state property in class components.
@@ -1030,6 +1034,8 @@ The use of Fragment is particularly helpful in scenarios where you want to group
 
 _____________________________________________________________________________________________________________________________________________
 **Hooks**
+
+
 React Hooks are functions that enable functional components to use state and other React features that were previously only available in class components. They were introduced in React version 16.8 to provide a more concise and expressive way to work with state and side effects in functional components.
 
 Here are some of the most commonly used React Hooks:
@@ -1178,6 +1184,8 @@ React Hooks have become an integral part of React development, offering a more c
 
 ____________________________________________________________________________________________________________________________________________________________
 **pages in frontnd**
+
+
 It looks like there might be a typo in your question, and you might be referring to "pages in frontend." If you're asking about structuring pages in a frontend web application, particularly in the context of a Single Page Application (SPA) or a multi-page application, here's some information:
 1.	Single Page Application (SPA):
 •	In SPAs, the application typically consists of a single HTML file, and the content is dynamically loaded as the user interacts with the application.
@@ -1218,6 +1226,9 @@ Remember that the specific architecture and practices may vary based on the fram
 _______________________________________________________________________________________________________________________________________________________________________
 
 **React js limitaions**
+
+
+
 Limited Functionality: React primarily focuses on the view layer, meaning it handles rendering UI components and managing state. It doesn't offer built-in features for routing, forms, state management, etc. This requires developers to use additional libraries or write custom code, adding complexity and potentially increasing development time.
 Steeper Learning Curve: Compared to some frameworks, React has a steeper learning curve. Concepts like JSX, virtual DOM, and component lifecycles require a good understanding of JavaScript and can be challenging for beginners.
 Large Ecosystem Dependence: With its focus on UI, React relies heavily on a vast ecosystem of third-party libraries and tools for functionalities like routing, state management, testing, and more. While this offers flexibility, it can also be overwhelming to choose and manage these dependencies, especially for newcomers.
@@ -1448,6 +1459,8 @@ Pros of using React.js:
 
 _____________________________________________________________________________________________________________________________________
 **Cons of using React.js:**
+
+
 1.	Learning Curve: For developers new to React or modern JavaScript concepts, there might be a learning curve. Understanding concepts like JSX, components, state, and props might take some time.
 2.	Boilerplate Code: React applications can sometimes require more boilerplate code compared to other libraries or frameworks. This may lead to more initial setup and potentially increased development time.
 3.	Fast-Paced Ecosystem: The React ecosystem evolves rapidly, which can be both an advantage and a disadvantage. While updates bring new features and improvements, it may also require developers to keep up with the latest changes.
@@ -1466,6 +1479,8 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________
 
 **protected routes in react js**
+
+
 In a React.js application, you might want to implement protected routes to control access to certain parts of your application based on user authentication status. Here's a simple example of how you can implement protected routes using React Router and a basic authentication context.
 Let's assume you have a PrivateRoute component that you want to protect:
 
@@ -1578,6 +1593,9 @@ This is a basic example, and you might need to adapt it based on your specific a
 
 ________________________________________________________________________________________________________________________________________________________________________________________
 **React js key prop**
+
+
+
 In React.js, the key prop is a special attribute that you use to uniquely identify and differentiate between elements in a collection (such as an array of components) during the process of rendering and updating. The key prop helps React optimize the rendering performance and efficiently update the DOM.
 Here are a few important points about the key prop:
 1.	Uniqueness: Each key within a set of sibling elements should be unique. This allows React to efficiently update and reorder elements without unnecessary re-rendering.
