@@ -26,8 +26,10 @@ Here's a basic example of JSX:
 const element = <h1>Hello, React!</h1>;
 
 ```
+```javascript
 
 In this example, the <h1> tag is not a string, but a JSX element representing a heading element in the React component. JSX allows you to mix HTML-like syntax within your JavaScript code.
+```
 
 Key features of JSX:
 
