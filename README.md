@@ -1990,3 +1990,54 @@ const memoizedValue = useMemo(() => {
 ```
 
 Benefit: useMemo improves performance by avoiding unnecessary recalculations of a value when its dependencies haven't changed.
+
+________________________________________________________________________________________________________________________
+**Global object in react js**
+In React.js, there isn&#39;t a concept of a &quot;global object&quot; in the same way as you might find in other
+programming environments like the browser&#39;s window object or Node.js&#39;s global object. React.js is
+designed to encourage a component-based architecture where each component manages its own state and
+behavior.
+However, you can create a global object or state that can be shared among components using various
+
+
+techniques:
+Context API: React provides a Context API that allows you to share data across the component tree
+without having to pass props down manually at every level. You can create a context object and provide it
+at the top level of your application.
+```javascript
+
+import React, { createContext, useContext, useState } from &#39;react&#39;;
+// Create a context
+const GlobalContext = createContext();
+// Create a provider component
+export const GlobalProvider = ({ children }) =&gt; {
+const [globalState, setGlobalState] = useState(/* initial state */);
+return (
+&lt;GlobalContext.Provider value={{ globalState, setGlobalState }}&gt;
+{children}
+&lt;/GlobalContext.Provider&gt;
+);
+};
+
+```
+
+// Custom hook to consume the context
+```javascript
+
+export const useGlobalState = () =&gt; useContext(GlobalContext);
+
+```
+
+Then, you can wrap your application with the GlobalProvider component at the root level and access the
+global state using the useGlobalState hook in any component.
+
+
+Redux: Redux is a popular state management library for JavaScript applications, including React. It
+provides a global state container that can be accessed by any component in your application. You can
+create a Redux store and dispatch actions to update the global state.
+Custom global object: While not a recommended approach in most cases, you can create a JavaScript
+module that exports a global object and import it wherever you need it in your components. However, be
+cautious with this approach as it can lead to tightly coupled and harder-to-manage code.
+
+Each of these methods has its own use cases and trade-offs, so choose the one that best fits the needs and
+complexity of your application.
