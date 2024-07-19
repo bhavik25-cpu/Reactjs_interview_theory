@@ -915,8 +915,10 @@ yarn add react-router-dom
 
 Basic Usage:
 
-```javascript
 // App.js
+
+```javascript
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
@@ -998,10 +1000,14 @@ const MyComponent = () => {
 
 ```
 
+```javascript
 
 In this example, the Fragment component is used to wrap multiple elements without introducing an additional parent <div> or any other HTML element. When this component is rendered, only the <h1> and <p> elements will be present in the DOM, and there won't be an extra wrapper element.
+```
+```javascript
 
 Alternatively, you can use the shorthand syntax <> ... </> instead of Fragment:
+```
 
 ```javascript
 import React from 'react';
